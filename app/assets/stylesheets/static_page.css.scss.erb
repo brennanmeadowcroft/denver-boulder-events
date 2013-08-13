@@ -1,0 +1,132 @@
+@import "foundation_and_overrides";
+@import "overrides";
+
+body {
+	background: url(<%= image_path("denver-summer-skyline.jpg") %>) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a {
+	text-decoration: underline;
+}
+
+.top-bar {
+	margin-bottom: 0;
+	background: $nav-bar-color;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.signup_callout {
+	@include grid-row();
+	min-height: 575px;
+	margin-top: 80px;
+/*	margin-bottom: 70px;
+*/
+	.copy {
+		padding: 20px;
+		background: $callout-color;
+		color: $dbe-light-text;
+		border-radius: 10px;
+	}
+
+
+	.subscribe {
+		p {
+			text-align: center;
+		}
+
+		.response {
+			margin-bottom: 10px;
+			text-align: center;
+			color: $dbe-light-text;
+			font-style: italic;
+		}
+	}
+
+	.signup {
+		@include button($radius:5px, $bg:$dbe-tertiary);
+	}
+
+	.service_alert {
+		@include alert();
+		@include alert-style($dbe-accent-fail);
+	}
+}
+
+.content {
+	background: $dbe-primary	;
+	color: $dbe-light-text;
+
+	section {
+		min-height: 500px;
+		color: $dbe-dark-text;
+		border-bottom: 1px solid $dbe-dark-text;
+	}
+
+	.copy {
+		@include grid-row();
+		padding-top: 20px;
+	}
+
+	.image_links {
+		ul {
+			list-style: none;
+		}
+
+		li {
+			margin-right: 4%;
+			display: inline;
+		}
+
+		img {
+			width: 15%;
+			border: 1px solid #000000;
+		}
+	}
+}
+
+.footer {
+	margin: 0;
+	padding: 15px;
+	background: $dbe-primary;
+	color: $dbe-dark-text;
+
+	ul {
+		margin: 0;
+		li {
+			margin-right: 20px;
+			display: inline;
+		}
+	}
+}
+
+.question_modal {
+	@include reveal-modal-base($width:40%);
+
+	padding: 0;
+
+	h3 {
+		padding: 10px;
+		background: $dbe-secondary;
+		color: $dbe-light-text;
+	}
+
+	p {
+		padding: 0 10px 10px 10px;
+		color: $dbe-dark-text;
+	}
+}
+
+form {
+	@include grid-column(8, $center:true);
+
+	label {
+		color: #FFFFFF;
+	}
+}

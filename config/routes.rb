@@ -1,4 +1,6 @@
 DbeventsRails::Application.routes.draw do
+  root :to => 'static_page#index'
+  match '/faq' => 'static_page#faq', :as => :faq
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
