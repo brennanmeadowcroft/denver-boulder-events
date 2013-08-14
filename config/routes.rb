@@ -1,6 +1,14 @@
 DbeventsRails::Application.routes.draw do
-  root :to => 'static_page#index'
+  resources :requests, :only => [:index, :new, :edit, :create, :update, :destroy]
+
+  match '/requests/:id/approve' => 'requests#approve', :as => :approve_request
+  match '/requests/:id/validate' => 'requests#validate', :as => :validate_request
+  match '/requests/:id/resend_validation' => 'requests#resend_validation', :as => :resend_validation
+
   match '/faq' => 'static_page#faq', :as => :faq
+
+  root :to => 'static_page#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

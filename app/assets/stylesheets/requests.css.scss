@@ -1,0 +1,17 @@
+@import "foundation_and_overrides";
+@import "overrides";
+
+.content {
+	background: $dbe-primary;
+}
+
+.sidebar_nav {
+	@include grid-column(2);
+	ul {
+		@include side-nav();
+	}
+	li {}
+}
+.content_wrapper {
+	@include grid-column(10);
+}
