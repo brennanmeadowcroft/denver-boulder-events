@@ -26,6 +26,8 @@ class RequestsController < ApplicationController
 
     respond_to do |format|
       if @request.save
+        RequestMailer.verify_email(@request).deliver
+
         flash[:success] = "Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you."
         format.html { redirect_to root_path }
       else
@@ -48,18 +50,48 @@ class RequestsController < ApplicationController
   end
 
   def validate
-    @request = Requeset.find(params[:id])
+    @request = Request.find(params[:id])
+    @code = params[:code]
+
+    if @request.verification_code = @code
+      @request.validated = 1
+    end
 
     respond_to do |format|
-      if @request.validate
-        format.html { redirect_to root }
+      if @request.save!
+        format.html { redirect_to validation_success_path }
       else 
         format.html { redirect_to root }
       end
     end
   end
 
+  def validation_success
+    @request = Request.find(params[:id])
+
+    respond_to do |format|
+      if @request.validated = 1
+        flash[:success] = "Email Validated!"
+        format.html
+      else
+        flash[:error] = "We couldn't validate your email"
+        format.html { redirect_to root }
+      end
+    end
+  end
+
   def resend_validation
+    @request = Request.find(params[:id])
+
+    respond_to do |format|
+      if RequestMailer.verify_email(@request).deliver
+        flash[:success] = "Verfication Sent!"
+        format.html { redirect_to requests_path }
+      else 
+        flash[:error] = "There was a problem sending the verification!"
+        format.html { redirect_to requests_path }
+      end
+    end
   end
 
   def approve

@@ -2,8 +2,9 @@ DbeventsRails::Application.routes.draw do
   resources :requests, :only => [:index, :new, :edit, :create, :update, :destroy]
 
   match '/requests/:id/approve' => 'requests#approve', :as => :approve_request
-  match '/requests/:id/validate' => 'requests#validate', :as => :validate_request
+  match '/requests/:id/validate/:code' => 'requests#validate', :as => :validate_request
   match '/requests/:id/resend_validation' => 'requests#resend_validation', :as => :resend_validation
+  match '/requests/:id/validation_success' => 'requests#validation_success', :as => :validation_success
 
   match '/faq' => 'static_page#faq', :as => :faq
 
