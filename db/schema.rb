@@ -11,7 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130815003149) do
+ActiveRecord::Schema.define(:version => 20130815025721) do
+
+  create_table "events", :force => true do |t|
+    t.string   "event_name"
+    t.string   "location"
+    t.text     "notes"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.string   "frequency"
+    t.datetime "recurrence_end_date"
+    t.integer  "recurrence_end_count"
+    t.string   "recurrence_day"
+    t.integer  "recurrence_frequency"
+    t.integer  "user_id"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
+  end
 
   create_table "requests", :force => true do |t|
     t.string   "email"

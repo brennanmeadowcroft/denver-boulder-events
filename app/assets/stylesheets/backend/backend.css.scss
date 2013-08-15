@@ -48,7 +48,7 @@ a {
 	@include grid-column(10);
 }
 
-.requests, .suggestions {
+.requests, .suggestions, .events {
 	.header {
 		margin-bottom: 20px;
 		h1 {
@@ -65,6 +65,22 @@ a {
 	}
 }
 
+.events {
+	.event_form {
+		@include grid-row();
+
+		.event_detail {
+			@include grid-column(8);
+		}
+		.event_recurrence {
+			@include grid-column(4);
+			border: 1px solid #000000;
+		}
+	}
+	.actions {
+		@include grid-row();
+	}
+}
 
 table {
 	width: 100%;

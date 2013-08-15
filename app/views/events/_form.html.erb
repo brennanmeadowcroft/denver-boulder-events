@@ -1,0 +1,18 @@
+<%= form_for(@event) do |f| %>
+  <div class="event_form">
+    <div class="event_detail">
+      <%= f.text_field :event_name, :placeholder => "Event Name" %>
+      <%= f.text_field :location, :placeholder => "Location" %>
+      <%= f.text_field :start_date, :placeholder => "Start Date" %>
+      <%= f.text_field :end_date, :placeholder => "End Date" %>
+      <%= f.text_area :notes, :placeholder => "Notes" %>
+    </div>
+    <div class="event_recurrence">
+      <br />
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit :class => "button" %>
+    <%= link_to 'Cancel', events_path, :class => "button" %>
+  </div>
+<% end %>
