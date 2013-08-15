@@ -47,6 +47,7 @@
 		<p><%= link_to "Top", "#home", :class => "smoothScroll" %></p>
 		<p>Spam sucks.  People who spam, suck.  If we spammed you, by the transitive property, we would suck.  Since we don't suck, we can therefore determine that we don't spam.  Boom... mathematical proof your email is safe with us.</p>
 		<p>All kidding aside, you are busy and already buried in email.  The events in the calendar are supposed to be fun and enjoyable... that doesn't include a ton of emails from us.  We won't spam you because we want you to spend your free time doing an event on the calendar, not reading our emails.</p>
+		<p>If you haven't done so already, also check out <%= link_to "how we will use your email address", faq_path(:anchor => "email_policy"), :class => "smoothScroll" %>.</p>
 	</div>
 </section>
 <section id="email_policy">
@@ -54,12 +55,14 @@
 		<h3>What are you going to do with my email address?</h3>
 		<p><%= link_to "Top", "#home", :class => "smoothScroll" %></p>
 		<p>We ask for your email address for a few reasons:</p>
-		<ol>
+		<ul>
 			<li>To be able to notify you important news such as changes in service or a new feature.</li>
 			<li>To let you know about a big event that we added at the last minute.  We strive to keep this at an absolute minimum.</li>
+			<li>To update you when we add a bunch (over a dozen) new events.</li>
 			<li>To get an idea of how many subscribers we have.  The calendar doesn't tell us this so we need some way to know how popular the service is.</li>
-		</ol>
-		<p>We will never sell your email address and will try to keep our talking to a minimum.</p>
+		</ul>
+		<p>We will never sell your email address and will try to keep our talking to a minimum.  As we evolve based on feature requests and your feedback, this might change but we will let you know if that ever happens.</p>
+		<p>If you haven't done so already, also check out our <%= link_to "views on spam", faq_path(:anchor => "spam"), :class => "smoothScroll" %>.</p>
 	</div>
 </section>
 <section id="email_required">
@@ -82,6 +85,7 @@
 			<li>Cultural Events</li>
 		</ul>
 		<p>These are not hard and fast rules, just guidelines we try to consider before adding an event to your calendar.</p>
+		<p>Have an event that fits and you would like to see added?  <%= link_to "Suggest it to us", root_path(:anchor => "suggest_event"), :class => "smoothScroll" %></p>
 	</div>
 </section>
 <section id="submit_event">
@@ -89,6 +93,7 @@
 		<h3>I have an event... can I get it added to the calendar?</h3>
 		<p><%= link_to "Top", "#home", :class => "smoothScroll" %></p>
 		<p>The internet is a big place and we probably missed a ton of happenings. That being said, if you have an event you want to add to the calendar, please tell us about it.  The calendar is curated so we can't guarantee that it will get on there but, if it fits our <a href="#event_guidelines">Event Guidelines</a>, we will probably add it.</p>
+		<p>Go ahead... be a little crazy... <%= link_to "suggest the event", root_path(:anchor => "suggest_event"), :class => "smoothScroll" %>.  We won't judge... we'll even say thanks.</p>
 	</div>
 </section>
 <section id="help_out">
@@ -98,6 +103,22 @@
 		<p>We'd really love some coffee... kidding... but, if you're going...</p>
 		<p>Actually, we can always use some help finding events.  Please feel free to <a href="index-full-image.html#suggest_event">submit events</a> as you find them.</p>
 		<p>Also, we will periodically put out product surveys to check interest in new features.  Keep an eye on our blog for information as it comes up.</p>
+	</div>
+</section>
+<section id="meaning_of_life">
+	<div class="copy">
+		<h3>What is the meaning of life?</h3>
+		<p><%= link_to "Top", "#home", :class => "smoothScroll" %></p>
+		<p>This probably is different for everyone but we think it is to go out and have great experiences that you can use to prove to your teenagers that you were cool once.  Do it now or they'll never believe you.</p>
+		<p>The Denver/Boulder events calendar can help with that. <%= link_to "Sign Up Now", root_path %></p>
+	</div>
+</section>
+<section id="hgtg">
+	<div class="copy">
+		<h3>What is 7 * 6?</h3>
+		<p><%= link_to "Top", "#home", :class => "smoothScroll" %></p>
+		<p>42.</p>
+		<p>To be fair, we never said there wouldn't be math... truthfully though, it is the <%= link_to "answer to the ultimate question of life, the universe and everything", "http://en.wikipedia.org/wiki/42_(number)" %>... so, that kind of makes up for having to do multiplication.</p>
 	</div>
 </section>
 <section id="ask_a_question">

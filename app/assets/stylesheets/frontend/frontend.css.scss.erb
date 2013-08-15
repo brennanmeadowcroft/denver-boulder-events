@@ -7,6 +7,12 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	font-family: $dbe-body-font;
+}
+
+
+h1, h2, h3, h4 {
+	font-family: $dbe-heading-font;
 }
 
 a {
@@ -14,8 +20,13 @@ a {
 	color: $dbe-link-color;
 
 	&:hover {
-		color: $dbe-tertiary;
+		color: $dbe-primary-accent;
 	}
+}
+
+h1 {
+	color: $dbe-primary-accent;
+	font-size: 2.5em;
 }
 
 .top-bar {
@@ -31,8 +42,13 @@ a {
 	@include grid-row();
 	min-height: 575px;
 	margin-top: 80px;
-/*	margin-bottom: 70px;
-*/
+	text-align: center;
+
+	h1 {
+		margin: 0;
+		padding: 0;
+		color: $dbe-primary-accent;
+	}
 	.copy {
 		padding: 20px;
 		background: $callout-color;
@@ -41,6 +57,7 @@ a {
 	}
 
 	.subscribe {
+		margin-top: 75px;
 		p {
 			text-align: center;
 		}
@@ -54,7 +71,7 @@ a {
 	}
 
 	.signup {
-		@include button($radius:5px, $bg:$dbe-tertiary);
+		@include button($radius:5px, $bg:$dbe-accent-success);
 	}
 
 	.service_alert {
@@ -68,9 +85,24 @@ a {
 	color: $dbe-light-text;
 
 	section {
-		min-height: 500px;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		min-height: 600px;
 		color: $dbe-dark-text;
-		border-bottom: 1px solid $dbe-dark-text;
+
+		ul {
+			margin-left: 40px;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+
+	}
+
+	.alt_color {
+		background: $dbe-secondary;
+		color: $dbe-light-text;
 	}
 
 	.copy {
@@ -97,7 +129,8 @@ a {
 
 .footer {
 	margin: 0;
-	padding: 15px;
+	padding: 5px;
+	border: none;
 	background: $dbe-primary;
 	color: $dbe-dark-text;
 

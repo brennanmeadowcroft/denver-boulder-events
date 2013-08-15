@@ -1,5 +1,13 @@
+<% provide(:title, "Subscription Requests") %>
+
 <div class="requests">
-  <h1>Listing requests</h1>
+  <div class="header">
+    <h1>Requests</h1>
+    <%= link_to 'New Request', new_request_path %>
+  </div>
+  <% flash.each do |key, value| %>
+    <div class="alert-<%= key %>"><%= value %></div>
+  <% end %>
 
   <table>
     <tr>
@@ -13,8 +21,9 @@
   <% @requests.each do |request| %>
     <tr>
       <td><%= request.email %></td>
-      <td><%= request.validated %></td>
-      <td><%= request.approved %></td>
+      <td><%= request.verification_code %></td>
+      <td class="binary"><%= request.validated %></td>
+      <td class="binary"><%= request.approved %></td>
       <td><%= request.created_at %></td>
       <td><%= link_to 'Resend Validation Email', resend_validation_path(request) %> | 
       <%= link_to 'Edit', edit_request_path(request) %> | 
@@ -22,8 +31,4 @@
     </tr>
   <% end %>
   </table>
-
-  <br />
-
-  <%= link_to 'New Request', new_request_path %>
 </div>

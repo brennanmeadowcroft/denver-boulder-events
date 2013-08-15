@@ -1,8 +1,12 @@
 <div class="sidebar_nav">
+	<img src="http://placekitten.com/200/200" class="logo" />
 	<ul>
- 		<li><%= link_to "Subscriber Requests", requests_path %></li>
+ 		<li><%= link_to "Requests", requests_path, :class => "active" %></li>
 		<li>Users</li>
 		<li>Events</li>
+		<li>Suggested Events</li>
 		<li>Tags</li>
+		<li class="divider"></li>
+		<li><%= link_to "View Public Page", root_path %></li>
 	</ul>
 </div>

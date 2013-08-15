@@ -1,4 +1,11 @@
-<h1>You have successfully validated your email address.</h1>
-<p>Thanks again for signing up.  You can access the calendar at:</p>
-<%= link_to "#", "<Link To Calendar" %>
-<p>If you aren't sure how to subscribe to the calendar in your application, please reference our <%= link_to "FAQ", faq_path(:anchor => "how_to_subscribe") %>.</p>
+<% provide(:title, "Email Validation Successful") %>
+
+<a name="home"></a>
+<div class="signup_callout">
+	<div class="copy">
+		<h1>You have successfully validated your email address.</h1>
+		<p>Thanks again for signing up.  You can access the calendar at:</p>
+		<%= link_to "https://www.google.com/calendar/ical/o66vahpvqgf6isephvq5chedg8%40group.calendar.google.com/public/basic.ics", "https://www.google.com/calendar/ical/o66vahpvqgf6isephvq5chedg8%40group.calendar.google.com/public/basic.ics" %>
+		<p>If you aren't sure how to subscribe to the calendar in your application, please reference our <%= link_to "FAQ", faq_path(:anchor => "how_to_subscribe") %>.</p>
+	</div>
+</div>

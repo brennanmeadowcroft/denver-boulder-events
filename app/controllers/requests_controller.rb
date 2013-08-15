@@ -13,7 +13,7 @@ class RequestsController < ApplicationController
     @request = Request.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html
     end
   end
 
@@ -71,8 +71,7 @@ class RequestsController < ApplicationController
 
     respond_to do |format|
       if @request.validated = 1
-        flash[:success] = "Email Validated!"
-        format.html
+        format.html { render :layout => "public" }
       else
         flash[:error] = "We couldn't validate your email"
         format.html { redirect_to root }

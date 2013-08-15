@@ -3,15 +3,88 @@
 
 html {
 	background: $dbe-primary;
+	padding-top: 20px;
+	color: $dbe-dark-text;
+	font-family: $dbe-body-font;
+}
+
+h1, h2, h3, h4 {
+	font-family: $dbe-heading-font;
+}
+
+a {
+	color: $dbe-link-color;
+
+	&:hover {
+		color: $dbe-primary-accent;
+	}
+}
+
+.alert-success, .alert-fail {
+	@include alert-base();
+	@include alert-style($dbe-accent-success);
+}
+
+.alert-fail {
+	@include alert-style($dbe-accent-fail);
 }
 
 .sidebar_nav {
 	@include grid-column(2);
-	ul {
-		@include side-nav();
+
+	border-right: 1px solid $dbe-secondary;
+
+	.logo {
+		width: 200px;
 	}
-	li {}
+
+	ul {
+		@include side-nav($font-size: 1em);
+	}
+	li {
+	}
 }
 .content_wrapper {
 	@include grid-column(10);
+}
+
+.requests {
+	.header {
+		margin-bottom: 20px;
+		h1 {
+			margin-bottom: 10px;
+			padding: 10px;
+			display: inline;
+		}
+
+		a {
+			@include button($radius:5px, $bg:$dbe-secondary-accent);
+			@extend .right;
+			vertical-align: baseline;
+		}
+	}
+
+	table {
+		width: 100%;
+		font-color: $dbe-dark-text;
+
+		.binary {
+			text-align: center;
+		}
+	}
+}
+
+.footer {
+	margin: 0;
+	padding: 15px;
+	background: $dbe-primary;
+	color: $dbe-dark-text;
+
+	ul {
+		margin: 0;
+		li {
+			margin-right: 20px;
+			display: inline;
+		}
+	}
 }
