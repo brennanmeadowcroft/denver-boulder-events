@@ -1,6 +1,6 @@
 <%= form_for(@suggestion) do |f| %>
-  <%= f.text_field :email, :placeholder => "Your Email Address" %>
-  <%= f.text_field :name, :placeholder => "Your Name" %>
-  <%= f.text_area :content, :placeholder => "Your Suggestion" %>
+  <%= f.email_field :email, :required => true, :placeholder => "Your Email Address" %>
+  <%= f.text_field :name, :required => true, :placeholder => "Your Name" %>
+  <%= f.text_area :content, :required => true, :placeholder => "Your Suggestion" %>
   <%= f.submit :class => "button" %>
 <% end %>

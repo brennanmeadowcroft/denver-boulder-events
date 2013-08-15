@@ -1,4 +1,4 @@
-<%= form_for(@request) do |f| %>
+<%= form_for @request do |f| %>
   <%= f.text_field :email, :placeholder => "Email Address" %>
   <%= f.submit :class => "button" %>
   <%= link_to "Cancel", requests_path, :class => "button" %>
