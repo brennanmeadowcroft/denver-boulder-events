@@ -1,0 +1,5 @@
+<%= form_for(@tag) do |f| %>
+  <%= f.text_field :description, :placeholder => 'Tag Description' %>
+  <%= f.submit :class => "button" %>
+  <%= link_to "Cancel", tags_path, :class => "button" %>
+<% end %>

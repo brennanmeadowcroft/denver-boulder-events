@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @tag.description %></p>
+
+<h3>Tagged Events</h3>
+<table>
+	<tr>
+		<th>Event Name</th>
+		<th>Location</th>
+		<th>Start Date</th>
+	</tr>
+<% @tag.events.each do |event| %>
+	<tr>
+		<td><%= event.event_name %></td>
+		<td><%= event.location %></td>
+		<td><%= event.start_date %></td>
+	</tr>
+<% end %>
+</table>

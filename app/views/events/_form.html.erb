@@ -6,6 +6,7 @@
       <%= f.text_field :start_date, :placeholder => "Start Date" %>
       <%= f.text_field :end_date, :placeholder => "End Date" %>
       <%= f.text_area :notes, :placeholder => "Notes" %>
+      <%= f.text_field :tag_tokens, :id => "event_tag_tokens", :data => { :load => @event.tags } %>
     </div>
     <div class="event_recurrence">
       <br />

@@ -48,7 +48,7 @@ a {
 	@include grid-column(10);
 }
 
-.requests, .suggestions, .events {
+.requests, .suggestions, .events, .tags {
 	.header {
 		margin-bottom: 20px;
 		h1 {
@@ -80,6 +80,10 @@ a {
 	.actions {
 		@include grid-row();
 	}
+}
+
+input[type=text] {
+	width: 100%;
 }
 
 table {

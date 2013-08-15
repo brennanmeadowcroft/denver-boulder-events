@@ -3,9 +3,13 @@ DbeventsRails::Application.routes.draw do
     resources :events
     resources :suggestions, :only => [:index, :show, :create, :destroy]
     resources :requests, :only => [:index, :new, :edit, :create, :update, :destroy]
+    resources :tags
   end
 
   match '/admin' => 'requests#index', :as => :admin_root
+
+  match '/admin/tag_list/' => 'tags#tag_list'
+
   match '/requests/:id/approve' => 'requests#approve', :as => :approve_request
   match '/requests/:id/validate/:code' => 'requests#validate', :as => :validate_request
   match '/requests/:id/resend_validation' => 'requests#resend_validation', :as => :resend_validation
