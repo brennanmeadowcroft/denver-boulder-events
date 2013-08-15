@@ -1,8 +1,5 @@
 <%= form_for(@request) do |f| %>
   <%= f.text_field :email, :placeholder => "Email Address" %>
   <p><a href="#" data-reveal-id="email_modal" id="open_modal">Why do we need your email?</a></p>
-  <% flash.each do |key, value| %>
-    <div><%= value %></div>
-  <% end %>
   <%= f.submit "Sign Up Free", :class => "signup" %>
 <% end %>

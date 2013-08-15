@@ -48,7 +48,7 @@ a {
 	@include grid-column(10);
 }
 
-.requests {
+.requests, .suggestions {
 	.header {
 		margin-bottom: 20px;
 		h1 {
@@ -58,19 +58,24 @@ a {
 		}
 
 		a {
-			@include button($radius:5px, $bg:$dbe-secondary-accent);
+			@include button($radius:5px, $bg:$dbe-link-color);
 			@extend .right;
 			vertical-align: baseline;
 		}
 	}
+}
 
-	table {
-		width: 100%;
-		font-color: $dbe-dark-text;
 
-		.binary {
-			text-align: center;
-		}
+table {
+	width: 100%;
+	font-color: $dbe-dark-text;
+
+	.small_options {
+		width: 20%;
+	}
+
+	.binary {
+		text-align: center;
 	}
 }
 

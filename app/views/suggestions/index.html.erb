@@ -1,0 +1,22 @@
+<% provide(:title, "Submitted Suggestions") %>
+
+<div class="suggestions">
+  <div class="header">
+    <h1>Suggestions</h1>
+  </div>
+
+  <% flash.each do |key, value| %>
+    <div class="alert-<%= key %>"><%= value %></div>
+  <% end %>
+
+  <table>
+  <% @suggestions.each do |suggestion| %>
+    <tr>
+      <td><%= link_to suggestion.content, suggestion %></td>
+      <td class="small_options"><%= link_to 'Destroy', suggestion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br />
+</div>

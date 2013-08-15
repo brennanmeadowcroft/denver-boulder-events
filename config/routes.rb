@@ -1,4 +1,5 @@
 DbeventsRails::Application.routes.draw do
+  resources :suggestions, :only => [:index, :show, :create, :destroy]
   resources :requests, :only => [:index, :new, :edit, :create, :update, :destroy]
 
   match '/requests/:id/approve' => 'requests#approve', :as => :approve_request

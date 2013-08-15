@@ -1,5 +1,9 @@
 <% provide(:title, "Events in Denver and Boulder") %>
 
+<% flash.each do |key, value| %>
+	<div class="alert-<%= key %>"><%= value %></div>
+<% end %>
+
 <%= render 'static_page/signup_callout' %>
 <%= render 'layouts/menu_bar' %>
 <div class="content">

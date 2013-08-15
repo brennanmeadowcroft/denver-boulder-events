@@ -1,0 +1,8 @@
+<% provide(:title, "Submitted Suggestion") %>
+
+<h2>Suggestion</h2>
+<p><%= @suggestion.name %></p>
+<p><%= @suggestion.email %></p>
+<p><%= @suggestion.content %></p>
+
+<%= link_to 'Respond', "mailto: #{ @suggestion.email }" %> | <%= link_to 'Back', suggestions_path %>

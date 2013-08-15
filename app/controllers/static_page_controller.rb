@@ -3,6 +3,7 @@ class StaticPageController < ApplicationController
 	
 	def index
 		@request = Request.new
+		@suggestion = Suggestion.new
 	end
 
 	def faq
