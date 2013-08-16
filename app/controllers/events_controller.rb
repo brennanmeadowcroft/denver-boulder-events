@@ -63,4 +63,13 @@ class EventsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def ics
+    @events = Event.all
+
+    respond_to do |format|
+      format.html
+      format.ics
+    end
+  end
 end

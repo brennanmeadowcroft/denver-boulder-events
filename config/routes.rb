@@ -7,6 +7,7 @@ DbeventsRails::Application.routes.draw do
   end
 
   match '/admin' => 'requests#index', :as => :admin_root
+  match '/ics' => 'events#ics'
 
   match '/admin/tag_list/' => 'tags#tag_list'
 
