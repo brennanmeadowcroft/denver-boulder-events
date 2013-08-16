@@ -9,7 +9,20 @@
       <%= f.text_field :tag_tokens, :id => "event_tag_tokens", :data => { :load => @event.tags } %>
     </div>
     <div class="event_recurrence">
-      <br />
+      <h4>Recurring Events</h4>
+      <%= f.label :frequency %>
+      <%= select(:event, :frequency, %w[Daily Weekly Monthly Yearly], { include_blank: true }) %>
+      <%= f.label "Repeat Every..." %>
+      <%= select(:event, :recurrence_frequency, ((0..30).map { |i| [i, i] }), { include_blank: true }) %>
+      <%= f.label "Ends On..." %>
+      <%= f.text_field :recurrence_end_date %>
+      <%= f.label "Ends After n Occurences..." %>
+      <%= f.text_field :recurrence_end_count %>
+      <%= f.label "Repeat On... (comma separated)" %>
+      <%= f.text_field(:recurrence_day) %>
+      <p>Available day options are: SU MO TU WE TR FR SA</p>
+      <p>To get the 3rd Thursday (or something similar), use 3TR.  The last Friday is -1FR</p>
+      <p>Events that occur on the 1st and 15th of the month should be done in two events.</p>
     </div>
   </div>
   <div class="actions">

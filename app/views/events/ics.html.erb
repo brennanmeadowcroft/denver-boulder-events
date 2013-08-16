@@ -22,11 +22,13 @@ DTSTART:19701101T020000<br />
 RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU<br />
 END:STANDARD<br />
 END:VTIMEZONE<br />
-
 <% @events.each do |event| %>
 	BEGIN:VEVENT<br />
 	DTSTART;VALUE=DATE:<%= event.start_date.to_s(:short_ical) %><br />
 	DTEND;VALUE=DATE:<%= event.end_date.to_s(:short_ical) %><br />
+	<% if event.frequency != '' %>
+		<%= event.recurrence_rule %><br />
+	<% end %>
 	DTSTAMP:<%= event.start_date.to_s(:long_ical) %><br />
 	CREATED:<%= event.created_at.to_s(:long_ical) %><br />
 	DESCRIPTION:<%= event.notes %><br />
