@@ -20,11 +20,11 @@
 
   <% @events.each do |event| %>
     <tr>
-      <td><%= event.event_name %></td>
+      <td><%= link_to event.event_name, event %></td>
       <td><%= event.location %></td>
-      <td><%= event.start_date %></td>
-      <td><%= event.end_date %></td>
-      <td><%= link_to 'Show', event %> | <%= link_to 'Edit', edit_event_path(event) %> | <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= event.start_date.strftime("%B %e, %Y") %></td>
+      <td><%= event.end_date.strftime("%B %e, %Y") %></td>
+      <td><%= link_to 'Edit', edit_event_path(event) %> | <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
   </table>

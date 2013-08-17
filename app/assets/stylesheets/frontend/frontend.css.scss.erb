@@ -75,14 +75,18 @@ h1 {
 		}
 	}
 
-	.signup {
-		@include button($radius:5px, $bg:$dbe-accent-success);
-	}
-
 	.service_alert {
 		@include alert();
 		@include alert-style($dbe-accent-fail);
 	}
+}
+
+.signup_button {
+	@include button($radius:5px, $bg:$dbe-accent-success);
+}
+
+.general_button {
+	@include button($radius:5px, $bg:$dbe-link-color);
 }
 
 .content {

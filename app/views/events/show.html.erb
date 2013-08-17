@@ -1,5 +1,29 @@
-<p id="notice"><%= notice %></p>
-
-
+  <div class="event_form">
+    <div class="event_detail">
+      <p>Event Name: <%= @event.event_name %></p>
+      <p>Location: <%= @event.location %></p>
+      <p>Start Date: <%= @event.start_date %></p>
+      <p>End Date: <%= @event.end_date %></p>
+      <p>Notes: <%= @event.notes %></p>
+    </div>
+    <div class="event_recurrence">
+      <h4>Recurring Events</h4>
+      <p>Occurs: <%= @event.frequency %></p>
+      <p> Repeat Every: <%= @event.recurrence_frequency %></p>
+      <p>Ends On: <%= @event.recurrence_end_date %></p>
+      <p>Ends After n Occurences: <%= @event.recurrence_end_count %></p>
+      <p>Repeat On: <%= @event.recurrence_day %></p>
+    </div>
+</div>
+<table>
+	<tr>
+		<th>Tags</th>
+	</tr>
+	<% @event.tags.each do |tag| %>
+		<tr>
+			<td><%= link_to tag.description, tag_path(tag) %></td>
+		</tr>
+	<% end %>
+</table>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

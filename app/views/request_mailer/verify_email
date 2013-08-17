@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+	<h1>Thank you for signing up at DenverBoulderEvents.com</h1>
+	<p>You are moments away from getting access to the calendar and the ton of great events listed on it.  We just need to verify your email address.  Please click the link (or copy and paste into your browser) and you will be on your way.</p>
+
+	<a href="<%= @verify_url %>"><%= @verify_url %></a>
+
+	<p>If you have any questions, just reply to this email.</p>
+
+	<p>Thanks again,</p>
+	<br />
+	<br />
+	<p>Brennan Meadowcroft</p>
+	<p>Founder & Guy Who Uploads Events</p>
+  </body>
+</html>
