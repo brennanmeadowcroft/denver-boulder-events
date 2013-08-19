@@ -35,8 +35,8 @@ default_run_options[:pty] = true
 #   end
 # end
 
-#after 'deploy:update_code', 'deploy:assets:precompile'
-before 'deploy:create_symlink', 'deploy:assets:precompile'
+after 'deploy:update_code', 'deploy:assets:precompile'
+#before 'deploy:create_symlink', 'deploy:assets:precompile'
 after 'deploy:create_symlink', 'deploy:link_release_to_public'
 
 desc "deploy the precompiled assets"
@@ -78,14 +78,16 @@ namespace :deploy do
 		run "cd ~"
 
 		# remove the "current" directory under the application
-		# run "rm -rf ~/#{current_path} && ln -sf ~/#{current_release} ~/#{current_path}"
-		run "ln -sf ~/#{current_release} ~/#{current_path}"
+		run "rm -rf ~/#{current_path} && ln -sf ~/#{current_release} ~/#{current_path}"
+		# run "ln -s ~/#{current_release}/ ~/#{current_path}"
 
 		# create a symlink between the most recent release and the "current" directory.
 		# Since "current/" was deleted in the previous step, it will create it
 		
 		# Link the assets in the shared path to the current deployment's assets
 		run "ln -sf ~/#{shared_path}/assets ~/#{current_path}/public/assets"
+
+		run "ln -sf ~/#{shared_path}/system ~/#{current_path}"
 
 		# Link the shared database.yml file to the current versions
 		run "ln -sf ~/#{shared_path}/config/database.yml ~/#{current_path}/config"

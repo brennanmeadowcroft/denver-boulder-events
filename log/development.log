@@ -86773,3 +86773,186 @@ Completed 200 OK in 110ms (Views: 109.6ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/DBE-Logo-orange.png" for 127.0.0.1 at 2013-08-18 20:53:32 -0600
 Served asset /DBE-Logo-orange.png - 200 OK (96ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 21:10:06 -0600
+Connecting to database specified by database.yml
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (2.1ms)
+  Rendered static_page/_signup_callout.html.erb (19.7ms)
+  Rendered layouts/_menu_bar.html.erb (1.5ms)
+  Rendered static_page/_about.html.erb (0.5ms)
+  Rendered static_page/_faq.html.erb (2.4ms)
+  Rendered suggestions/_form.html.erb (114.9ms)
+  Rendered static_page/_suggest_event.html.erb (116.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered static_page/_email_modal.html.erb (0.9ms)
+  Rendered static_page/index.html.erb within layouts/public (257.1ms)
+Compiled all/foundation_and_overrides.css  (3100ms)  (pid 35935)
+Compiled all/overrides.css  (263ms)  (pid 35935)
+Compiled application-all.css  (3651ms)  (pid 35935)
+Compiled frontend/frontend.css  (1362ms)  (pid 35935)
+Compiled application-frontend.css  (1484ms)  (pid 35935)
+Compiled vendor/custom.modernizr.js  (0ms)  (pid 35935)
+Compiled jquery.js  (2ms)  (pid 35935)
+Compiled jquery_ujs.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.alerts.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.clearing.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.cookie.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.dropdown.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.forms.js  (23ms)  (pid 35935)
+Compiled foundation/foundation.joyride.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.magellan.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.orbit.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.placeholder.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.reveal.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.section.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.tooltips.js  (0ms)  (pid 35935)
+Compiled foundation/foundation.topbar.js  (0ms)  (pid 35935)
+Compiled foundation/index.js  (226ms)  (pid 35935)
+Compiled foundation.abide.js  (0ms)  (pid 35935)
+Compiled jquery.tokeninput.js  (0ms)  (pid 35935)
+Compiled mailchimp.js  (0ms)  (pid 35935)
+Compiled smoothscroll.js  (0ms)  (pid 35935)
+Compiled static_page.js  (0ms)  (pid 35935)
+Compiled vevents.js  (0ms)  (pid 35935)
+Compiled zepto.js  (0ms)  (pid 35935)
+Compiled application.js  (933ms)  (pid 35935)
+Completed 200 OK in 7179ms (Views: 6718.1ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /application-frontend.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /all/overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /all/foundation_and_overrides.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /frontend/frontend.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /application-all.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.forms.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /denver-summer-skyline.jpg - 304 Not Modified (12ms)
+
+
+Started GET "/assets/DBE-Logo-orange.png" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /DBE-Logo-orange.png - 304 Not Modified (8ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /DBE-Logo-white.png - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.section.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation.abide.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:16 -0600
+Served asset /foundation/index.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /jquery.tokeninput.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /smoothscroll.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /mailchimp.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /static_page.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /application.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /vevents.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 21:10:17 -0600
+Served asset /zepto.js - 304 Not Modified (2ms)
