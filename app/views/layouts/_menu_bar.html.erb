@@ -2,7 +2,9 @@
 	<nav class="top-bar">
 		<ul class="title-area">
 			<li class="name">
-				<h1><%= link_to "Denver Boulder Events", root_path, :class => 'smoothScroll' %></h1>
+				<%= link_to root_path, :class => 'smoothScroll' do %>
+					<%= image_tag("DBE-Logo-white.png", :class => 'nav-logo', :alt => "Denver Boulder Events") %>
+				<% end %>
 			</li>
 		</ul>
 		<section class="top-bar-section right">

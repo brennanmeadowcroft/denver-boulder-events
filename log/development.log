@@ -84357,3 +84357,2419 @@ Served asset /application-backend.css - 304 Not Modified (2ms)
 
 Started GET "/assets/backend/token-input-facebook.css?body=1" for 127.0.0.1 at 2013-08-16 19:54:59 -0600
 Served asset /backend/token-input-facebook.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:29:09 -0600
+Connecting to database specified by database.yml
+Processing by StaticPageController#index as HTML
+ERROR: compiling _app_views_static_page__signup_callout_html_erb___2970383345135528192_70365565498580 RAISED /Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected '<', expecting ')'
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		 ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		                                             ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected keyword_class, expecting ')'
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		                                                          ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected '>'
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+		<h1>Be In The Know Like The Cool Kids</h1>
+		         ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:7: unknown regexp option - p
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:8: syntax error, unexpected '<'
+		<div class="subscribe">
+		 ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:9: syntax error, unexpected '<'
+ 			<%= render 'requests/public_form' );@output_buffer.safe_concat('
+ 			 ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tput_buffer = _old_virtual_path, _old_output_buffer
+...                               ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:14: syntax error, unexpected '\n', expecting '='
+Function body:           def _app_views_static_page__signup_callout_html_erb___2970383345135528192_70365565498580(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "static_page/_signup_callout";_old_output_buffer = @output_buffer;signup_callout = local_assigns[:signup_callout];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<a name="home"></a>
+<div class="signup_callout">
+	<div class="copy">
+		');@output_buffer.append= ( image_tag("logo", :alt => "Denver Boulder Events", :class => "logo")
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		<h1>Be In The Know Like The Cool Kids</h1>
+		<p>Experience all Denver and Boulder has to offer beyond happy hours, right in your own calendar.</p>
+		<div class="subscribe">
+ 			<%= render 'requests/public_form' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('		</div>
+	</div>
+</div>');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:297:in `module_eval'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:297:in `compile'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:232:in `compile!'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:144:in `block in render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:125:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:143:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/index.html.erb:7:in `_app_views_static_page_index_html_erb__4016174011939086255_70365540418620'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:145:in `block in render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:125:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/template.rb:143:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activerecord-3.2.11/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:414:in `_run__4169141219352401221__process_action__538712007672197864__callbacks'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `instrument'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activerecord-3.2.11/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/base.rb:121:in `process'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_controller/metal.rb:246:in `block in action'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:601:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activerecord-3.2.11/lib/active_record/query_cache.rb:64:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `_run__4308075750887617498__call__319796886439218519__callbacks'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/railties-3.2.11/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/activesupport-3.2.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/railties-3.2.11/lib/rails/engine.rb:479:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/railties-3.2.11/lib/rails/application.rb:223:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/railties-3.2.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+/Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered static_page/_signup_callout.html.erb (6.6ms)
+  Rendered static_page/index.html.erb within layouts/public (58.5ms)
+Completed 500 Internal Server Error in 293ms
+
+ActionView::Template::Error (/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected '<', expecting ')'
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		 ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		                                             ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected keyword_class, expecting ')'
+		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+		                                                          ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:5: syntax error, unexpected '>'
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:6: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+		<h1>Be In The Know Like The Cool Kids</h1>
+		         ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:7: unknown regexp option - p
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:8: syntax error, unexpected '<'
+		<div class="subscribe">
+		 ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:9: syntax error, unexpected '<'
+ 			<%= render 'requests/public_form' );@output_buffer.safe_concat('
+ 			 ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:14: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tput_buffer = _old_virtual_path, _old_output_buffer
+...                               ^
+/Users/brennan/rails_projects/dbevents_rails/app/views/static_page/_signup_callout.html.erb:14: syntax error, unexpected '\n', expecting '='):
+    2: <div class="signup_callout">
+    3: 	<div class="copy">
+    4: 		<%= image_tag("logo", :alt => "Denver Boulder Events", :class => "logo")
+    5: 		<img src="http://placekitten.com/100/100" alt="Logo" class="logo" />
+    6: 		<h1>Be In The Know Like The Cool Kids</h1>
+    7: 		<p>Experience all Denver and Boulder has to offer beyond happy hours, right in your own calendar.</p>
+    8: 		<div class="subscribe">
+  app/views/static_page/index.html.erb:7:in `_app_views_static_page_index_html_erb__4016174011939086255_70365540418620'
+
+
+  Rendered /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:29:25 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (2.1ms)
+  Rendered static_page/_signup_callout.html.erb (89.0ms)
+  Rendered layouts/_menu_bar.html.erb (1.4ms)
+  Rendered static_page/_about.html.erb (0.5ms)
+  Rendered static_page/_faq.html.erb (2.6ms)
+  Rendered suggestions/_form.html.erb (61.0ms)
+  Rendered static_page/_suggest_event.html.erb (83.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered static_page/_email_modal.html.erb (0.9ms)
+  Rendered static_page/index.html.erb within layouts/public (233.8ms)
+Compiled all/foundation_and_overrides.css  (2640ms)  (pid 35807)
+Compiled all/overrides.css  (11ms)  (pid 35807)
+Compiled application-all.css  (2751ms)  (pid 35807)
+Compiled frontend/frontend.css  (1311ms)  (pid 35807)
+Compiled application-frontend.css  (1340ms)  (pid 35807)
+Compiled vendor/custom.modernizr.js  (0ms)  (pid 35807)
+Compiled jquery.js  (2ms)  (pid 35807)
+Compiled jquery_ujs.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.alerts.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.clearing.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.cookie.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.dropdown.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.forms.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.joyride.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.magellan.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.orbit.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.placeholder.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.reveal.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.section.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.tooltips.js  (0ms)  (pid 35807)
+Compiled foundation/foundation.topbar.js  (0ms)  (pid 35807)
+Compiled foundation/index.js  (282ms)  (pid 35807)
+Compiled foundation.abide.js  (0ms)  (pid 35807)
+Compiled jquery.tokeninput.js  (0ms)  (pid 35807)
+Compiled mailchimp.js  (0ms)  (pid 35807)
+Compiled smoothscroll.js  (0ms)  (pid 35807)
+Compiled static_page.js  (0ms)  (pid 35807)
+Compiled vevents.js  (0ms)  (pid 35807)
+Compiled zepto.js  (0ms)  (pid 35807)
+Compiled application.js  (678ms)  (pid 35807)
+Completed 200 OK in 5328ms (Views: 5327.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /frontend/frontend.css - 200 OK (9ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /all/overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /application-all.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /all/foundation_and_overrides.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /application-frontend.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.forms.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/logo" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /logo - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/logo"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:29:31 -0600
+Served asset /denver-summer-skyline.jpg - 304 Not Modified (141ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.section.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/index.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation.abide.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /jquery.tokeninput.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /mailchimp.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /smoothscroll.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /vevents.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /static_page.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /zepto.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:32 -0600
+Served asset /application.js - 304 Not Modified (36ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (1.0ms)
+  Rendered static_page/_signup_callout.html.erb (2.3ms)
+  Rendered layouts/_menu_bar.html.erb (1.2ms)
+  Rendered static_page/_about.html.erb (0.2ms)
+  Rendered static_page/_faq.html.erb (2.4ms)
+  Rendered suggestions/_form.html.erb (1.3ms)
+  Rendered static_page/_suggest_event.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (13.0ms)
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /application-frontend.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /frontend/frontend.css - 200 OK (1ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /DBE-Logo - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/DBE-Logo"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:29:53 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (0.9ms)
+  Rendered static_page/_signup_callout.html.erb (1.6ms)
+  Rendered layouts/_menu_bar.html.erb (0.9ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.9ms)
+  Rendered suggestions/_form.html.erb (1.3ms)
+  Rendered static_page/_suggest_event.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (10.6ms)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /application-frontend.css - 200 OK (1ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /frontend/frontend.css - 200 OK (1ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /DBE-Logo - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/DBE-Logo"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/brennan/.rvm/rubies/ruby-1.9.3-p374/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/brennan/.rvm/gems/ruby-1.9.3-p374@rails32/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:30:14 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (0.9ms)
+  Rendered static_page/_signup_callout.html.erb (2.6ms)
+  Rendered layouts/_menu_bar.html.erb (1.0ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.6ms)
+  Rendered suggestions/_form.html.erb (1.3ms)
+  Rendered static_page/_suggest_event.html.erb (23.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (33.3ms)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /frontend/frontend.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /application-frontend.css - 200 OK (1ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /DBE-Logo.png - 200 OK (108ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:33:35 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:33:36 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:34:08 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (1.5ms)
+  Rendered static_page/_signup_callout.html.erb (2.6ms)
+  Rendered layouts/_menu_bar.html.erb (1.2ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.6ms)
+  Rendered suggestions/_form.html.erb (1.6ms)
+  Rendered static_page/_suggest_event.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (13.4ms)
+Compiled frontend/frontend.css  (1350ms)  (pid 35807)
+Compiled application-frontend.css  (1ms)  (pid 35807)
+Completed 200 OK in 1501ms (Views: 1501.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /frontend/frontend.css - 200 OK (6ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /application-frontend.css - 200 OK (13ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:09 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:34:10 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:38:51 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (1.0ms)
+  Rendered static_page/_signup_callout.html.erb (14.8ms)
+  Rendered layouts/_menu_bar.html.erb (1.5ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.6ms)
+  Rendered suggestions/_form.html.erb (1.5ms)
+  Rendered static_page/_suggest_event.html.erb (18.6ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.4ms)
+  Rendered static_page/index.html.erb within layouts/public (103.5ms)
+Compiled frontend/frontend.css  (1620ms)  (pid 35807)
+Compiled application-frontend.css  (2ms)  (pid 35807)
+Completed 200 OK in 1878ms (Views: 1877.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /frontend/frontend.css - 200 OK (9ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /application-frontend.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /DBE-Logo-white.png - 200 OK (7ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:53 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:38:54 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:39:18 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (0.9ms)
+  Rendered static_page/_signup_callout.html.erb (1.5ms)
+  Rendered layouts/_menu_bar.html.erb (0.8ms)
+  Rendered static_page/_about.html.erb (0.2ms)
+  Rendered static_page/_faq.html.erb (1.7ms)
+  Rendered suggestions/_form.html.erb (1.2ms)
+  Rendered static_page/_suggest_event.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (11.1ms)
+Compiled frontend/frontend.css  (1316ms)  (pid 35807)
+Compiled application-frontend.css  (1ms)  (pid 35807)
+Completed 200 OK in 1413ms (Views: 1412.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /frontend/frontend.css - 200 OK (11ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /application-frontend.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:19 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:20 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:20 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:39:44 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (0.9ms)
+  Rendered static_page/_signup_callout.html.erb (1.6ms)
+  Rendered layouts/_menu_bar.html.erb (0.8ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (2.8ms)
+  Rendered suggestions/_form.html.erb (1.3ms)
+  Rendered static_page/_suggest_event.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.6ms)
+  Rendered static_page/index.html.erb within layouts/public (12.3ms)
+Compiled frontend/frontend.css  (1308ms)  (pid 35807)
+Compiled application-frontend.css  (2ms)  (pid 35807)
+Completed 200 OK in 1446ms (Views: 1445.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /application-frontend.css - 200 OK (41ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /frontend/frontend.css - 200 OK (7ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:39:46 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (0.9ms)
+  Rendered static_page/_signup_callout.html.erb (1.5ms)
+  Rendered layouts/_menu_bar.html.erb (2.3ms)
+  Rendered static_page/_about.html.erb (0.2ms)
+  Rendered static_page/_faq.html.erb (1.8ms)
+  Rendered suggestions/_form.html.erb (1.4ms)
+  Rendered static_page/_suggest_event.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (13.0ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /application-all.css - 200 OK (1ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /application-frontend.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /frontend/frontend.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:17 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:18 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:40:45 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (1.1ms)
+  Rendered static_page/_signup_callout.html.erb (2.2ms)
+  Rendered layouts/_menu_bar.html.erb (0.8ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (2.2ms)
+  Rendered suggestions/_form.html.erb (1.2ms)
+  Rendered static_page/_suggest_event.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (11.8ms)
+Compiled frontend/frontend.css  (1278ms)  (pid 35807)
+Compiled application-frontend.css  (2ms)  (pid 35807)
+Completed 200 OK in 1342ms (Views: 1342.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /frontend/frontend.css - 200 OK (36ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /application-frontend.css - 200 OK (16ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:46 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:40:47 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:41:01 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (1.1ms)
+  Rendered static_page/_signup_callout.html.erb (1.8ms)
+  Rendered layouts/_menu_bar.html.erb (0.9ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.8ms)
+  Rendered suggestions/_form.html.erb (1.4ms)
+  Rendered static_page/_suggest_event.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (11.1ms)
+Compiled frontend/frontend.css  (1232ms)  (pid 35807)
+Compiled application-frontend.css  (1ms)  (pid 35807)
+Completed 200 OK in 1330ms (Views: 1330.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /frontend/frontend.css - 200 OK (9ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /application-frontend.css - 200 OK (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:02 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:03 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:03 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:03 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:03 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:41:03 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:43:44 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (0.9ms)
+  Rendered static_page/_signup_callout.html.erb (2.0ms)
+  Rendered layouts/_menu_bar.html.erb (0.8ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.6ms)
+  Rendered suggestions/_form.html.erb (1.3ms)
+  Rendered static_page/_suggest_event.html.erb (14.5ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.3ms)
+  Rendered static_page/index.html.erb within layouts/public (23.8ms)
+Compiled frontend/frontend.css  (1315ms)  (pid 35807)
+Compiled application-frontend.css  (1ms)  (pid 35807)
+Completed 200 OK in 1487ms (Views: 1486.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /application-frontend.css - 200 OK (17ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /frontend/frontend.css - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:46 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:43:47 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:49:21 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (2.3ms)
+  Rendered static_page/_signup_callout.html.erb (16.1ms)
+  Rendered layouts/_menu_bar.html.erb (3.8ms)
+  Rendered static_page/_about.html.erb (0.2ms)
+  Rendered static_page/_faq.html.erb (2.6ms)
+  Rendered suggestions/_form.html.erb (1.7ms)
+  Rendered static_page/_suggest_event.html.erb (29.3ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.4ms)
+  Rendered static_page/index.html.erb within layouts/public (100.7ms)
+Compiled frontend/frontend.css  (1528ms)  (pid 35807)
+Compiled application-frontend.css  (2ms)  (pid 35807)
+Completed 200 OK in 1879ms (Views: 1878.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-all.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /application-all.css - 200 OK (0ms)
+
+
+Started GET "/assets/frontend/frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /frontend/frontend.css - 200 OK (6ms)
+
+
+Started GET "/assets/all/overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /all/overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/all/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /all/foundation_and_overrides.css - 200 OK (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /vendor/custom.modernizr.js - 200 OK (0ms)
+
+
+Started GET "/assets/application-frontend.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /application-frontend.css - 200 OK (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.alerts.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.clearing.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.cookie.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.forms.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.joyride.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/denver-summer-skyline.jpg" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /denver-summer-skyline.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo.png" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /DBE-Logo.png - 200 OK (0ms)
+
+
+Started GET "/assets/DBE-Logo-white.png" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /DBE-Logo-white.png - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.magellan.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.orbit.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.section.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.reveal.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.tooltips.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.placeholder.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/foundation.topbar.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /foundation.abide.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /jquery.tokeninput.js - 200 OK (0ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /mailchimp.js - 200 OK (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /smoothscroll.js - 200 OK (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /vevents.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /static_page.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:23 -0600
+Served asset /zepto.js - 200 OK (0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2013-08-18 20:49:38 -0600
+Processing by RequestsController#index as HTML
+  [1m[36mRequest Load (0.2ms)[0m  [1mSELECT "requests".* FROM "requests" [0m
+  Rendered requests/index.html.erb within layouts/backend (63.5ms)
+Compiled backend/backend.css  (1323ms)  (pid 35807)
+Compiled backend/token-input-facebook.css  (0ms)  (pid 35807)
+Compiled application-backend.css  (1447ms)  (pid 35807)
+  Rendered layouts/_side_menu_bar.html.erb (1.5ms)
+Completed 200 OK in 1656ms (Views: 1654.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backend/backend.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /backend/backend.css - 200 OK (5ms)
+
+
+Started GET "/assets/application-backend.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /application-backend.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/backend/token-input-facebook.css?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /backend/token-input-facebook.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation.abide.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.tokeninput.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /jquery.tokeninput.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /foundation/index.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/mailchimp.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /mailchimp.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/vevents.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /vevents.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/smoothscroll.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /smoothscroll.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_page.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /static_page.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/zepto.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /zepto.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-18 20:49:40 -0600
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-18 20:53:31 -0600
+Processing by StaticPageController#index as HTML
+  Rendered requests/_public_form.html.erb (1.1ms)
+  Rendered static_page/_signup_callout.html.erb (11.4ms)
+  Rendered layouts/_menu_bar.html.erb (1.0ms)
+  Rendered static_page/_about.html.erb (0.1ms)
+  Rendered static_page/_faq.html.erb (1.6ms)
+  Rendered suggestions/_form.html.erb (1.4ms)
+  Rendered static_page/_suggest_event.html.erb (22.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+  Rendered static_page/_email_modal.html.erb (0.4ms)
+  Rendered static_page/index.html.erb within layouts/public (73.6ms)
+Completed 200 OK in 110ms (Views: 109.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/DBE-Logo-orange.png" for 127.0.0.1 at 2013-08-18 20:53:32 -0600
+Served asset /DBE-Logo-orange.png - 200 OK (96ms)

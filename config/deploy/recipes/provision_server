@@ -1,0 +1,31 @@
+namespace :provision do
+	task :install_mysql, :roles => [ :db ] do
+		run "apt-get install mysql-server"
+		run "apt-get install mysql-client"
+	end
+
+	task :setup_mysql_user, :roles => [ :db ] do ; end
+	task :install_rvm, :roles => [ :app, :web ] do 
+		run "curl -L https://get.rvm.io | bash"
+		run "source ~/.rvm/scripts/rvm"
+	end
+	task :install_ruby_rails, :roles => [ :app, :web ] do
+		run "rvm install 1.9.3 && rvm use --default 1.9.3"
+		run "gem install rails --version=3.2.11"
+	end
+	task :install_git do 
+		run "sudo apt-get install git"
+	end
+	task :install_web_server, :roles => [ :web ] do 
+		run "gem install passenger"
+		run "apt-get install libcurl4-openssl-dev"
+		run "apt-get install apache2-mpm-worker"
+		run "apt-get install apache2-threaded-dev"
+		run "apt-get install libapr1-dev"
+		run "apt-get install libaprutil1-dev"
+		run "passenger-install-apache2-module"
+		run "echo LoadModule passenger_module /home/username/.rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12/ext/apache2/mod_passenger.so
+   PassengerRoot /home/username/.rvm/gems/ruby-1.9.3-p194/gems/passenger-3.0.12
+   PassengerRuby /home/username/.rvm/wrappers/ruby-1.9.3-p194/ruby >> "
+	end
+end
