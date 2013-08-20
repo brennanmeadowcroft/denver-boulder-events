@@ -1,5 +1,5 @@
 class RequestMailer < ActionMailer::Base
-  default from: "brennan@denverboulderevents.com"
+  default from: "Brennan - Denver Boulder Events <brennan@denverboulderevents.com>"
 
   def verify_email(request)
   	@request = request
