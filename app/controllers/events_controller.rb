@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
   layout 'backend'
+  before_filter :signed_in_user, only: [ :index, :show, :new, :edit, :create, :update, :destroy ]
+
   def index
     @events = Event.all
 

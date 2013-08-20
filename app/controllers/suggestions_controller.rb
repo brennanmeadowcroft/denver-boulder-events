@@ -1,5 +1,6 @@
 class SuggestionsController < ApplicationController
   layout "backend"
+  before_filter :signed_in_user
 
   def index
     @suggestions = Suggestion.all

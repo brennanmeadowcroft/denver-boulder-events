@@ -4,7 +4,10 @@ DbeventsRails::Application.routes.draw do
     resources :suggestions, :only => [:index, :show, :create, :destroy]
     resources :requests, :only => [:index, :new, :edit, :create, :update, :destroy]
     resources :tags
+    resources :users
   end
+
+  resources :sessions, :only => [:new, :create, :destroy ]
 
   match '/admin' => 'requests#index', :as => :admin_root
   match '/ics' => 'events#ics'
@@ -17,6 +20,10 @@ DbeventsRails::Application.routes.draw do
   match '/requests/:id/validation_success' => 'requests#validation_success', :as => :validation_success
 
   match '/faq' => 'static_page#faq', :as => :faq
+
+  match '/signin' => 'sessions#new', :as => :signin
+  match '/signout', to: 'sessions#destroy'
+  match '/signup' => 'users#new', :as => :signup
 
   root :to => 'static_page#index'
 

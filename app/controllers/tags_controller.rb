@@ -1,5 +1,6 @@
 class TagsController < ApplicationController
   layout "backend"
+  before_filter :signed_in_user
 
   def index
     @tags = Tag.all
