@@ -1,6 +1,6 @@
 class RequestsController < ApplicationController
   layout "backend"
-  before_filter :signed_in_user
+  before_filter :signed_in_user, only: [ :index, :new, :edit, :update, :destroy, :resend_validation, :approve ]
 
   def index
     @requests = Request.all
