@@ -1,6 +1,6 @@
 DbeventsRails::Application.routes.draw do
   scope '/admin' do
-    resources :events
+    resources :events, :only => [ :index, :show, :new, :edit, :create, :update, :destroy ]
     resources :suggestions, :only => [:index, :show, :create, :destroy]
     resources :requests, :only => [:index, :new, :edit, :create, :update, :destroy]
     resources :tags
@@ -10,7 +10,7 @@ DbeventsRails::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy ]
 
   match '/admin' => 'requests#index', :as => :admin_root
-  match '/ics' => 'events#ics'
+  match '/events/:ics_token/denverboulderevents' => 'events#ics', :as => :ics
 
   match '/admin/tag_list/' => 'tags#tag_list'
 

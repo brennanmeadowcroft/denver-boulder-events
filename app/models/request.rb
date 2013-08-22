@@ -1,5 +1,5 @@
 class Request < ActiveRecord::Base
-  attr_accessible :email, :approved, :validated, :verification_code
+  attr_accessible :email, :approved, :ics_token, :validated, :verification_code
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
@@ -8,6 +8,7 @@ class Request < ActiveRecord::Base
 
   def validate
   	self.validated = 1
+    self.ics_token = generate_ics_token()
   	save!
   end
 
@@ -16,11 +17,16 @@ class Request < ActiveRecord::Base
   	save!
   end
 
+  def generate_ics_token
+    self.id.to_s + "_" + SecureRandom.urlsafe_base64.to_s
+  end
+
   private
     def init
       self.approved = 0
       self.validated = 0
       self.verification_code = generate_verification_code()
+      self.ics_token = generate_ics_token()
     end
 
     def generate_verification_code

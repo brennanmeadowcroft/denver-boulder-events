@@ -88,6 +88,8 @@ namespace :deploy do
 		run "ln -sf ~/#{shared_path}/assets ~/#{current_path}/public/assets"
 
 		run "ln -sf ~/#{shared_path}/system ~/#{current_path}"
+		run "ln -sf ~/#{shared_path}/log/ ~/#{current_path}"
+		run "ln -sf ~/#{shared_path}/system/ ~/public_html"
 
 		# Link the shared database.yml file to the current versions
 		run "ln -sf ~/#{shared_path}/config/database.yml ~/#{current_path}/config"
@@ -99,6 +101,12 @@ namespace :deploy do
 
 		run "rm -rf public_html"
 		run "rm public_html"
+	end
+
+	task :cleanup_log do
+		run "cd ~/#{shared_path}/log"
+		run "rm production.log"
+		run "touch production.log"
 	end
 end
 

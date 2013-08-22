@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130820034818) do
+ActiveRecord::Schema.define(:version => 20130821050757) do
 
   create_table "events", :force => true do |t|
     t.string   "event_name"
@@ -41,7 +41,10 @@ ActiveRecord::Schema.define(:version => 20130820034818) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.string   "verification_code"
+    t.string   "ics_token"
   end
+
+  add_index "requests", ["ics_token"], :name => "index_requests_on_ics_token"
 
   create_table "suggestions", :force => true do |t|
     t.string   "email"

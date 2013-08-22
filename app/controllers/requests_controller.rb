@@ -55,7 +55,7 @@ class RequestsController < ApplicationController
     @code = params[:code]
 
     if @request.verification_code = @code
-      @request.validated = 1
+      @request.validate
     end
 
     respond_to do |format|
@@ -69,6 +69,7 @@ class RequestsController < ApplicationController
 
   def validation_success
     @request = Request.find(params[:id])
+    @ics_path = "http://www.denverboulderevents.com/events/#{@request.ics_token}/denverboulderevents.ics"
 
     respond_to do |format|
       if @request.validated = 1
