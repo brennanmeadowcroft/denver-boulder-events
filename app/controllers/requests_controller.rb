@@ -32,7 +32,12 @@ class RequestsController < ApplicationController
         flash[:success] = "Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you."
         format.html { redirect_to root_path }
       else
-        flash[:error] = "There was an error submitting your request."
+        # We only accept unique email addresses... duplicates will throw an error.  Notify the user of the problem.
+        if Request.find_by_email(params[:request][:email]).nil?
+          flash[:error] = "There was an error submitting your request."
+        else
+          flash[:error] = "That email address has already been registered. Please choose another."
+        end
         format.html { redirect_to root_path }
       end
     end

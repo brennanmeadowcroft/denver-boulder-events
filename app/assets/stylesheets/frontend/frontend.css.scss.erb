@@ -29,9 +29,13 @@ h1 {
 	font-size: 2.5em;
 }
 
-.alert-success, .alert-fail {
+.alert-success, .alert-error {
 	@include alert-base();
 	@include alert-style($dbe-accent-success);
+}
+
+.alert-error {
+	@include alert-style($dbe-accent-fail);
 }
 
 .top-bar {

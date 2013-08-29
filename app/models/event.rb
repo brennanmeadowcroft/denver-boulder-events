@@ -1,10 +1,16 @@
 class Event < ActiveRecord::Base
   attr_accessible :event_name, :location, :notes, :start_date, :end_date, :frequency, :recurrence_end_date, 
-  					:recurrence_end_date, :recurrence_end_count, :recurrence_day, :recurrence_frequency, :tag_ids, 
-  					:tag_tokens
+  					:recurrence_end_count, :recurrence_day, :recurrence_frequency, :tag_ids, :tag_tokens
   	attr_reader :tag_tokens
 
   has_and_belongs_to_many :tags
+  before_save :init
+
+  def init
+    self.start_date.utc
+    self.end_date.utc
+    self.recurrence_end_date.utc unless self.recurrence_end_date.nil?
+  end
 
   def recurrence_rule
     if !self.frequency.nil? && self.frequency != ''
