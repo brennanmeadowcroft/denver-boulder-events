@@ -20,6 +20,7 @@ DbeventsRails::Application.routes.draw do
   match '/requests/:id/validation_success' => 'requests#validation_success', :as => :validation_success
 
   match '/faq' => 'static_page#faq', :as => :faq
+  match '/sitemap' => 'static_page#sitemap', :as => :sitemap
 
   match '/signin' => 'sessions#new', :as => :signin
   match '/signout', to: 'sessions#destroy'

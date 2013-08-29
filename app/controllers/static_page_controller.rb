@@ -8,4 +8,10 @@ class StaticPageController < ApplicationController
 
 	def faq
 	end
+
+	def sitemap
+		respond_to do |format|
+			format.xml
+		end
+	end
 end
