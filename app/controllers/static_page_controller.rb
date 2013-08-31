@@ -18,18 +18,19 @@ class StaticPageController < ApplicationController
 
 	def dashboard
 		@events = Event.all
+		@requests = Request.all
 
-		# events_by_month = Event.events_by_month
-		# events_by_month_data = GoogleVisualr::DataTable.new		
-		# events_by_month_data.new_column('string', 'Event Date' ) 
-		# events_by_month_data.new_column('number', 'Total Records') 
-		# events_by_month_data.add_rows(events_by_month)
-		# events_by_month_option = { title: 'Total Events By Month',
-		# 			vAxis: {title: 'Tag',  titleTextStyle: {color: 'red'}},
-		# 			backgroundColor: '#ECF0F1',
-		# 			legend: {position: 'none'},
-		# 			height: 200 }
-		# @events_by_month_chart = GoogleVisualr::Interactive::LineChart.new(events_by_month_data, events_by_month_option)
+		events_by_month = Event.events_by_month
+		events_by_month_data = GoogleVisualr::DataTable.new		
+		events_by_month_data.new_column('string', 'Event Date' ) 
+		events_by_month_data.new_column('number', 'Total Records') 
+		events_by_month_data.add_rows(events_by_month)
+		events_by_month_option = { title: 'Total Events By Month',
+					vAxis: {title: 'Tag',  titleTextStyle: {color: 'red'}},
+					backgroundColor: '#ECF0F1',
+					legend: {position: 'none'},
+					height: 200 }
+		@events_by_month_chart = GoogleVisualr::Interactive::LineChart.new(events_by_month_data, events_by_month_option)
 
 		events_by_tag = Tag.events_by_tag
 		events_by_tag_data = GoogleVisualr::DataTable.new		
@@ -74,6 +75,7 @@ class StaticPageController < ApplicationController
 		request_validations_data.new_column('number', 'Validations') 
 		request_validations_data.add_rows(request_validations)
 		request_validations_option = { title: 'Requests vs. Validations',
+					vAxis: {minValue: 0},
 					backgroundColor: '#ECF0F1',
 					legend: {position: 'bottom'},
 					height: 200 }

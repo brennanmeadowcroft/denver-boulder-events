@@ -12,10 +12,10 @@ class Event < ActiveRecord::Base
   end
 
   def self.events_by_month
-    # data_array = self.find_by_sql("SELECT EXTRACT(MONTH FROM start_date) AS start_month, COUNT(*) AS total_events
-    #                   FROM events
-    #                   GROUP BY EXTRACT(MONTH FROM start_date) 
-    #                   ORDER BY start_date ASC")
+    data_array = self.find_by_sql("SELECT EXTRACT(MONTH FROM start_date) AS start_month, COUNT(*) AS total_events
+                      FROM events
+                      GROUP BY EXTRACT(MONTH FROM start_date) 
+                      ORDER BY start_date ASC")
     events_by_month = Array.new
     data_array.each do |value|
       temp_array = Array.new

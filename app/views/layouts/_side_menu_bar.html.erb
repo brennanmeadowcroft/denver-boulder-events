@@ -1,5 +1,7 @@
 <div class="sidebar_nav">
-	<%= image_tag("DBE-Logo.png", :alt => "Denver Boulder Events", :class => "logo") %>
+	<%= link_to admin_root_path do %>
+		<%= image_tag("DBE-Logo.png", :alt => "Denver Boulder Events", :class => "logo") %>
+	<% end %>
 	<ul>
  		<li><%= link_to "Requests", requests_path, :class => "active" %></li>
 		<li><%= link_to "Events", events_path %></li>
