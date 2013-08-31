@@ -27,10 +27,11 @@ class StaticPageController < ApplicationController
 		events_by_month_data.add_rows(events_by_month)
 		events_by_month_option = { title: 'Total Events By Month',
 					vAxis: {title: 'Tag',  titleTextStyle: {color: 'red'}},
+					hAxis: {showTextEvery: 1},
 					backgroundColor: '#ECF0F1',
 					legend: {position: 'none'},
 					height: 200 }
-		@events_by_month_chart = GoogleVisualr::Interactive::LineChart.new(events_by_month_data, events_by_month_option)
+		@events_by_month_chart = GoogleVisualr::Interactive::ColumnChart.new(events_by_month_data, events_by_month_option)
 
 		events_by_tag = Tag.events_by_tag
 		events_by_tag_data = GoogleVisualr::DataTable.new		

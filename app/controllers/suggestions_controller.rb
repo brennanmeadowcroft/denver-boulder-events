@@ -1,6 +1,6 @@
 class SuggestionsController < ApplicationController
   layout "backend"
-  before_filter :signed_in_user
+  before_filter :signed_in_user, only: [:index, :show, :destroy]
 
   def index
     @suggestions = Suggestion.all
