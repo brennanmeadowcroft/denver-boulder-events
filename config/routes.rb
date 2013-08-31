@@ -9,7 +9,7 @@ DbeventsRails::Application.routes.draw do
 
   resources :sessions, :only => [:new, :create, :destroy ]
 
-  match '/admin' => 'requests#index', :as => :admin_root
+  match '/admin' => 'static_page#dashboard', :as => :admin_root
   match '/events/:ics_token/denverboulderevents' => 'events#ics', :as => :ics
 
   match '/admin/tag_list/' => 'tags#tag_list'
@@ -25,6 +25,12 @@ DbeventsRails::Application.routes.draw do
   match '/signin' => 'sessions#new', :as => :signin
   match '/signout', to: 'sessions#destroy'
   match '/signup' => 'users#new', :as => :signup
+
+  match '/admin/events/total_events' => 'events#total_events', :as => :total_events
+  match '/admin/events/events_by_tag' => 'events#events_by_tag', :as => :events_by_tag
+  match '/admin/requests/requests_by_day' => 'requests#requests_by_day', :as => :requests_by_day
+  match '/admin/requests/cumul_requests_by_day' => 'requests#cumul_requests_by_day', :as => :cumul_requests_by_day
+  match '/admin/requests/requests_validations' => 'requests#requests_validations', :as => :requests_validations
 
   root :to => 'static_page#index'
 

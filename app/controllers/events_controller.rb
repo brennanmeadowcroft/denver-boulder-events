@@ -74,4 +74,16 @@ class EventsController < ApplicationController
       format.ics
     end
   end
+
+  def total_events
+    respond_to do |format|
+      format.json
+    end
+  end
+
+  def events_by_tag
+    respond_to do |format|
+      format.json
+    end
+  end
 end

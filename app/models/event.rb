@@ -6,6 +6,26 @@ class Event < ActiveRecord::Base
   has_and_belongs_to_many :tags
   before_save :init
 
+
+  def self.total_events
+    self.all.count
+  end
+
+  def self.events_by_month
+    # data_array = self.find_by_sql("SELECT EXTRACT(MONTH FROM start_date) AS start_month, COUNT(*) AS total_events
+    #                   FROM events
+    #                   GROUP BY EXTRACT(MONTH FROM start_date) 
+    #                   ORDER BY start_date ASC")
+    events_by_month = Array.new
+    data_array.each do |value|
+      temp_array = Array.new
+      temp_array << value.start_month.strftime('%m')
+      temp_array << value.running_total
+
+      cumul_requests_by_day << temp_array
+    end
+  end
+
   def init
     self.start_date.utc
     self.end_date.utc

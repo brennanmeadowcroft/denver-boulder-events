@@ -82,6 +82,15 @@ a {
 	}
 }
 
+.dashboard {
+	.events_dash, .requests_dash {
+		@include grid-column(5);
+	}
+	.requests_dash {}
+
+	.chart-medium {}
+}
+
 input[type=text] {
 	width: 100%;
 }

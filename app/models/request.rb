@@ -6,6 +6,55 @@ class Request < ActiveRecord::Base
 
   before_create :init
 
+  def self.requests_by_day
+    data_array = self.find_by_sql("SELECT DATE(created_at) AS created_at, COUNT(*) AS total_requests FROM requests GROUP BY DATE(created_at) ORDER BY created_at ASC")
+
+    requests_by_day = Array.new
+    data_array.each do |value|
+      temp_array = Array.new
+      temp_array << value.created_at.strftime('%Y-%m-%d')
+      temp_array << value.total_requests
+
+      requests_by_day << temp_array
+    end
+
+    return requests_by_day
+  end
+
+  def self.cumul_requests_by_day
+    data_array = self.find_by_sql("SELECT DATE(a.created_at) AS created_at, 
+                            (SELECT COUNT(*) 
+                              FROM requests AS b 
+                              WHERE created_at <= a.created_at) AS running_total 
+                      FROM requests AS a 
+                      GROUP BY DATE(a.created_at) 
+                      ORDER BY DATE(a.created_at) ASC")
+
+    cumul_requests_by_day = Array.new
+    data_array.each do |value|
+      temp_array = Array.new
+      temp_array << value.created_at.strftime('%Y-%m-%d')
+      temp_array << value.running_total
+
+      cumul_requests_by_day << temp_array
+    end
+
+    return cumul_requests_by_day
+  end
+
+  def self.request_validations
+    data_array = self.find_by_sql("SELECT COUNT(*) AS total_requests, SUM(validated) AS total_validations FROM requests")
+
+    request_validations = Array.new
+    temp_array = Array.new
+    temp_array << 'Count'
+    temp_array << data_array.first.total_requests
+    temp_array << data_array.first.total_validations
+    request_validations << temp_array
+
+    return request_validations
+  end
+
   def validate
   	self.validated = 1
     self.ics_token = generate_ics_token()

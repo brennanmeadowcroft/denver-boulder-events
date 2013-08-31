@@ -1,0 +1,22 @@
+<% provide(:title, "Admin Dashboard") %>
+
+<div class="dashboard">
+	<div class="events_dash">
+		<h2>Events</h2>
+		<div id="total_events" class="chart-medium">
+			<p>Total Events In Database: <%= @events.count %></p>
+		</div>
+		<div id="events_by_month" class="chart-medium"></div>
+		<div id="events_by_tag" class="chart-medium"></div>
+	</div>
+	<div class="requests_dash">
+		<h2>Requests</h2>
+		<div id="requests_by_day" class="chart-medium"></div>
+		<div id="cumul_requests_by_day" class="chart-medium"></div>
+		<div id="total_requests" class="chart-medium"></div>
+	</div>
+	<%= render_chart(@events_by_tag_chart, 'events_by_tag') %>
+	<%= render_chart(@requests_by_day_chart, 'requests_by_day') %>
+	<%= render_chart(@cumul_requests_by_day_chart, 'cumul_requests_by_day') %>
+	<%= render_chart(@request_validations_chart, 'total_requests') %>
+</div>

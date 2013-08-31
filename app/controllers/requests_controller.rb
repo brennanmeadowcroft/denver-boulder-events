@@ -120,4 +120,13 @@ class RequestsController < ApplicationController
       format.html { redirect_to requests_url }
     end
   end
+
+  def requests_by_day
+  end
+
+  def cumul_requests_by_day
+  end
+
+  def requests_validations
+  end
 end

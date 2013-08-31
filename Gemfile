@@ -24,6 +24,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'google_visualr', '2.1.6'
+
 
 group :production do
 	gem 'mysql2', '0.3.13'

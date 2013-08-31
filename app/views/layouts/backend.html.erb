@@ -16,9 +16,11 @@
 
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %> | DenverBoulderEvents.com Admin</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis:200' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   	<%= stylesheet_link_tag    "application-all" %>
     <%= stylesheet_link_tag    "application-backend" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= javascript_include_tag "dashboard-graphs" %>
     <%= csrf_meta_tags %>
   </head>
 
