@@ -6,7 +6,34 @@
 		<h1>You have successfully validated your email address.</h1>
 		<p>Thanks again for signing up.  You can access the calendar at:</p>
 		<%= link_to @ics_path, @ics_path %>
-		<p>If you aren't sure how to subscribe to the calendar in your application, please reference our <%= link_to "FAQ", faq_path(:anchor => "how_to_subscribe") %>.</p>
+		<p>If you aren't sure how to subscribe to the calendar in your application, here are links for some of the most popular services:</p>
+			<ul class="image_links">
+				<li>
+					<%= link_to "https://support.google.com/calendar/answer/37100?hl=en" do %>
+						<%= image_tag "google-logo-white.jpg", :alt => "Google", :target => '_blank' %>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to "http://windows.microsoft.com/en-us/windows/outlook/calendar-import-vs-subscribe" do %>
+						<%= image_tag "outlook.com-logo.jpg", :alt => "Outlook.com/Hotmail", :target => '_blank' %>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to "http://help.yahoo.com/tutorials/cal/cal/cal_subscribe4.html" do %>
+						<%= image_tag "yahoo-logo.jpg", :alt => "Yahoo!", :target => '_blank' %>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to "http://www.howtogeek.com/howto/18353/view-your-google-calendar-in-outlook-2010/" do %>
+						<%= image_tag "ms-outlook-logo.jpg", :alt => "Microsoft Office Outlook", :target => '_blank' %>
+					<% end %>
+				</li>
+				<li>
+					<%= link_to "http://www.apple.com/findouthow/mac/#subscribeical" do %>
+						<%= image_tag "ical-logo.png", :alt => "iCal (Mac OSX)", :target => '_blank' %>
+					<% end %>
+				</li>
+			</ul>
 	</div>
 </div>
 <%= render 'layouts/menu_bar' %>
