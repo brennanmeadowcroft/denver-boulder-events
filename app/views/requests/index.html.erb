@@ -13,7 +13,7 @@
     <tr>
       <th>Email Address</th>
       <th>Validated</th>
-      <th>Approved</th>
+      <th>Reminded</th>
       <th>Requested At</th>
       <th>Options</th>
     </tr>
@@ -23,7 +23,7 @@
       <td><%= request.email %></td>
       <td><%= request.verification_code %></td>
       <td class="binary"><%= request.validated %></td>
-      <td class="binary"><%= request.approved %></td>
+      <td class="binary"><%= request.reminded %></td>
       <td><%= request.created_at %></td>
       <td><%= link_to 'Resend Validation Email', resend_validation_path(request) %> | 
       <%= link_to 'Edit', edit_request_path(request) %> | 
