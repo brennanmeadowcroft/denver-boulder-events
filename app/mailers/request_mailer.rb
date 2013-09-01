@@ -7,6 +7,9 @@ class RequestMailer < ActionMailer::Base
   	mail(to: @request.email, subject: 'Verify Your Email Address')
   end
 
-  def welcome_email(request)
+  def welcome_email(request, ics_path)
+  	@request = request
+  	@ics_path = ics_path
+  	mail(to: @request.email, subject: 'Welcome to DenverBoulderEvents.com')
   end
 end

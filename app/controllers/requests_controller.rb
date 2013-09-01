@@ -78,6 +78,7 @@ class RequestsController < ApplicationController
 
     respond_to do |format|
       if @request.validated = 1
+        RequestMailer.welcome_email(@request, @ics_path).deliver
         format.html { render :layout => "public" }
       else
         flash[:error] = "We couldn't validate your email"
@@ -119,14 +120,5 @@ class RequestsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to requests_url }
     end
-  end
-
-  def requests_by_day
-  end
-
-  def cumul_requests_by_day
-  end
-
-  def requests_validations
   end
 end

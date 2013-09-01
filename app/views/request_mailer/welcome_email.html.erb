@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis:200' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<table style="width: 600px; background: #ECF0F1; color: #004983; font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Sans-Serif;">
+			<tr>
+				<td>
+					<table style="width: 66%; margin: auto;">
+						<tr>
+							<td align="middle">
+								<img src="http://www.denverboulderevents.com/assets/DBE-Logo-blue-small.png" style="margin-left: auto; margin-right: auto; width: 100px;"/>
+								<h1 style="font-family: 'Dosis', 'Helvetica Neue', Arial, Sans-Serif; color: #E67E22; text-align: center;">Welcome to Denver Boulder Events!</h1>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Thanks for subscribing and validating your email address. By now you've probably already subscribed to the calendar provided on that page when you validated your email. In case you haven't (or forget the link somewhere), I've included it in this email for you. There is also a <a href="http://www.denverboulderevents.com/faq/" style="color: ##0BA4C9;">FAQ</a> on how to subscribe in your chosen calendar.</p>
+							<td>
+						</tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<td></td>
+										<td style="padding: 20px; text-align: center;" align="middle">
+											<a href="<%= @ics_path %>"><%= @ics_path %></a>
+										</td>
+										<td style="width: 10%;"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding-bottom: 20px;">
+								<p>If you have a moment, I'd love it if you could take a <a href="https://docs.google.com/forms/d/1B_TgiJlToaXlF8B2vEIwZXIM21Ki_7-MVujtdpAqHDo/viewform">quick, 2 minute survey about the calendar.</a></p>
+								<p>Thanks again,</p>
+								<br />
+								<p>Brennan Meadowcroft<br />
+								Founder & Guy Who Uploads Events</p>
+							</td>
+						</tr>
+						<tr style="background: #032C36; color: #E5DDD4; text-align: center; font-size: 10px;" >
+							<td style="padding: 20px 20px 20px 20px;">
+								This email was sent to <%= @request.email %>. You are getting this email because you signed up at <a href="http://www.denverboulderevents.com" style="color: #0BA4C9;">DenverBoulderEvents.com</a>. You can view our stance on <a href="http://www.denverboulderevents.com/faq#spam"  style="color: #0BA4C9;">use of your email and spam</a>.
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
