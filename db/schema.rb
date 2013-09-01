@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130821050757) do
+ActiveRecord::Schema.define(:version => 20130901175317) do
 
   create_table "events", :force => true do |t|
     t.string   "event_name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20130821050757) do
     t.datetime "updated_at",        :null => false
     t.string   "verification_code"
     t.string   "ics_token"
+    t.integer  "reminded"
   end
 
   add_index "requests", ["ics_token"], :name => "index_requests_on_ics_token"
@@ -68,9 +69,11 @@ ActiveRecord::Schema.define(:version => 20130821050757) do
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
     t.string   "remember_token"
+    t.string   "user_key"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+  add_index "users", ["user_key"], :name => "index_users_on_user_key"
 
 end

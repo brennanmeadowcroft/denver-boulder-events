@@ -101,6 +101,27 @@ class RequestsController < ApplicationController
     end
   end
 
+  def validation_reminder
+    @requests = Request.unvalidated_users
+    user_key = User.find_by_user_key(params[:user_key])
+
+    respond_to do |format|
+      if !user_key.nil?
+        @requests.each do |request|
+          if request.reminded.nil?
+            RequestMailer.reminder_email(request).deliver
+
+            request.reminded = 1
+            request.save!
+          end
+        end
+        format.html
+      else
+        format.html { redirect_to events_path }
+      end
+    end
+  end
+
   def approve
     @request = Request.find(params[:id])
 

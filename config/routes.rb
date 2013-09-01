@@ -31,6 +31,7 @@ DbeventsRails::Application.routes.draw do
   match '/admin/requests/requests_by_day' => 'requests#requests_by_day', :as => :requests_by_day
   match '/admin/requests/cumul_requests_by_day' => 'requests#cumul_requests_by_day', :as => :cumul_requests_by_day
   match '/admin/requests/requests_validations' => 'requests#requests_validations', :as => :requests_validations
+  match '/admin/requests/validation_reminder/:user_key' => 'requests#validation_reminder', :as => :validation_reminder
 
   root :to => 'static_page#index'
 

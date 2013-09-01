@@ -1,5 +1,5 @@
 class Request < ActiveRecord::Base
-  attr_accessible :email, :approved, :ics_token, :validated, :verification_code
+  attr_accessible :email, :approved, :ics_token, :reminded, :validated, :verification_code
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
@@ -55,8 +55,14 @@ class Request < ActiveRecord::Base
     return request_validations
   end
 
+  def self.unvalidated_users
+    remind_date = (Time.now - 7.days).strftime('%Y-%m-%d')
+    self.find_by_sql("SELECT * FROM requests WHERE reminded IS NULL AND validated = 0 AND created_at < DATE('#{remind_date}')")
+  end
+
   def validate
   	self.validated = 1
+    self.reminded = 0
     self.ics_token = generate_ics_token()
   	save!
   end

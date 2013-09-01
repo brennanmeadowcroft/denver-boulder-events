@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<table style="width: 600px; background: #ECF0F1; color: #004983; font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, Sans-Serif;">
+			<tr>
+				<td>
+					<table style="width: 66%; margin: auto;">
+						<tr>
+							<td align="middle">
+								<img src="http://www.denverboulderevents.com/assets/DBE-Logo-blue-small.png" style="margin-left: auto; margin-right: auto;"/>
+								<h1 style="font-family: 'Dosis', 'Helvetica Neue', Arial, Sans-Serif; color: #E67E22; text-align: center;">Don't Forget To Validate Your Email</h1>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Hey there,</p>
+								<p>Looks like you subscribed to the calendar but never validated your email. Just wanted to follow up in case the email never arrived or *gasp* landed in your spam folder. To get access to the hundreds of events on the calendar, you have to verify your email. It only takes a moment:</p>
+							<td>
+						</tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr>
+							<td>
+								<table>
+									<tr>
+										<td style="width: 30%;"></td>
+										<td style="padding: 20px; text-align: center;" align="middle">
+											<a href="<%= @verify_url %>" style="padding: 20px; margin: 0; background: #209C07; text-decoration: none; color: #FFFFFF;">Verify Email</a>
+										</td>
+										<td style="width: 10%;"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding-bottom: 20px;">
+								<p>Don't worry, I won't bug you again. If you didn't mean to subscribe, you can just ignore this email and I'll leave you alone.</p>
+								<p>If you have any questions, check out our <a href="http://www.denverboulderevents.com/faq/" style="color: #0BA4C9;">FAQ.</a></p>
+								<p>Thanks again,</p>
+								<br />
+								<p>Brennan Meadowcroft<br />
+								Founder & Guy Who Uploads Events</p>
+							</td>
+						</tr>
+						<tr style="background: #032C36; color: #E5DDD4; text-align: center; font-size: 10px;" >
+							<td style="padding: 20px 20px 20px 20px;">
+								This email was sent to <%= @request.email %>. You are getting this email because you signed up at <a href="http://www.denverboulderevents.com" style="color: #0BA4C9;">DenverBoulderEvents.com</a>. You can view our stance on <a href="http://www.denverboulderevents.com/faq#spam"  style="color: #0BA4C9;">use of your email and spam</a>.
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
