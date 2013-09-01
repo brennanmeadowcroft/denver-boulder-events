@@ -80,6 +80,9 @@ a {
 	.actions {
 		@include grid-row();
 	}
+	.no_tag {
+		background-color: $dbe-accent-light-fail;
+	}
 }
 
 .dashboard {

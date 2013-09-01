@@ -9,6 +9,7 @@
     <div class="alert-<%= key %>"><%= value %></div>
   <% end %>
 
+  <p class="no_tag">Events that do not have a tag</p>
   <table>
     <tr>
       <th>Event</th>
@@ -19,7 +20,11 @@
     </tr>
 
   <% @events.each do |event| %>
-    <tr>
+    <% if event.tags.count == 0 %>
+      <tr class="no_tag">
+    <% else %>
+      <tr>
+    <% end %>
       <td><%= link_to event.event_name, event %></td>
       <td><%= event.location %></td>
       <td><%= event.start_date.strftime("%B %e, %Y") %></td>

@@ -7,16 +7,17 @@ $dbe-secondary: rgba(3, 44, 54, 1.0); /* Dark Blue - #032C36 */
 $dbe-primary-accent: rgba(230, 126, 34,1.0); /* Carrot Orange - #E67E22 */
 
 $dbe-accent-success: rgba(32, 156, 7, 1); /* Green - #209C07 */
-$dbe-accent-fail: rgba(212, 35, 24, 1);
+$dbe-accent-fail: rgba(212, 35, 24, 1); /* Red - #D42318 */
+$dbe-accent-light-fail: rgba(255, 157, 182, 1); /* Light shade of fail - #FF9DB6 */
 
 $dbe-light-text: rgba(229, 221, 212, 1); /* Light tan - #E5DDD4 */
 $dbe-dark-text: rgba(0, 73, 131, 1.0); /* Blue - #004983 */
 $dbe-dark-heading: rgba(20, 20, 20, 1.0); /* Dark Grey - #141414 */
-$dbe-light-heading: rgba(200, 200, 200, 1.0);
-$dbe-inactive-text: rgba(127, 140, 141,1.0);
+$dbe-light-heading: rgba(200, 200, 200, 1.0); /* Very light blue - #C8C8C8 */
+$dbe-inactive-text: rgba(127, 140, 141,1.0); /* Sea foam green? - #7F8C8D */
 
 $nav-bar-color: rgba(0, 73, 131, 0.8); /* Blue */
-$callout-color: rgba(68, 68, 68, 0.6);
+$callout-color: rgba(68, 68, 68, 0.6); /* Dark grey - #444444 */
 $dbe-link-color: rgba(11, 164, 201, 1.0); /* Light blue - #0BA4C9 */
 
 $body-font-color: $dbe-dark-text;
