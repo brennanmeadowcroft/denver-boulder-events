@@ -57,12 +57,11 @@ class Request < ActiveRecord::Base
 
   def self.unvalidated_users
     remind_date = (Time.now - 7.days).strftime('%Y-%m-%d')
-    self.find_by_sql("SELECT * FROM requests WHERE reminded IS NULL AND validated = 0 AND created_at < DATE('#{remind_date}')")
+    self.find_by_sql("SELECT * FROM requests WHERE reminded = 0 AND validated = 0 AND created_at < DATE('#{remind_date}')")
   end
 
   def validate
   	self.validated = 1
-    self.reminded = 0
     self.ics_token = generate_ics_token()
   	save!
   end
@@ -80,6 +79,7 @@ class Request < ActiveRecord::Base
     def init
       self.approved = 0
       self.validated = 0
+      self.reminded = 0
       self.verification_code = generate_verification_code()
       self.ics_token = generate_ics_token()
     end
