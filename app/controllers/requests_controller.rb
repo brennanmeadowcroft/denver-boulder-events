@@ -108,7 +108,7 @@ class RequestsController < ApplicationController
       if !user_key.nil?
         @requests.each do |request|
           if request.reminded == 0
-          #  RequestMailer.reminder_email(request).deliver
+            RequestMailer.reminder_email(request).deliver
 
             request.reminded = 1
             request.save!
